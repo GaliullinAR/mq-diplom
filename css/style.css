@@ -265,7 +265,8 @@ time {
 
 .item-box__list {
   display: flex;
-  gap: 0 20px;
+  flex-wrap: wrap;
+  gap: 20px;
   margin-bottom: 11px;
 }
 
@@ -279,6 +280,7 @@ time {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 1.17em;
+  line-height: 1.2;
 }
 
 .item-box__title {
@@ -313,6 +315,7 @@ time {
 .item-box__description {
   margin-bottom: 20px;
   line-height: 22px;
+  font-size: 15px;
 }
 
 .sidebar {
@@ -398,17 +401,22 @@ time {
   font-size: 1.09em;
   color: #a2a4a3;
   min-width: 222px;
-  height: 50px;
+  height: 48px;
   background-color: #f4f7f6;
   border: none;
   padding: 18px;
   flex: 1 0 auto;
+  outline: none;
 }
 
 .search::placeholder {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.09em;
   color: #a2a4a3;
+}
+
+.search:focus {
+  border-bottom: 1px solid #c9ab52;
 }
 
 .search-btn {
@@ -474,12 +482,22 @@ time {
   flex-wrap: wrap;
 }
 
-.tags__link {
+.tags__item {
   margin: 0 5px 6px 0;
+  
+}
+
+.tags__link {
   padding: 6px 12px 4px 12px;
   border: 3px solid #eeeeee;
   text-transform: uppercase;
   font-size: 1.09em;
+  font-weight: 600;
+  color: #0f0d0e;
+  display: inline-block;
+}
+
+.tags__link:hover {
   font-weight: 700;
   color: #000000;
 }
@@ -971,6 +989,11 @@ time {
   .item-box__autor {
     margin-bottom: 22px;
   }
+
+  
+  .item-box__description {
+    font-size: 14px;
+  } 
 
   .sidebar {
     display: flex;
