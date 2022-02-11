@@ -299,17 +299,19 @@ time {
   color: #b59f5b;
 }
 
-.item-box__autor {
+.item-box__time {
   font-size: 1em;
   color: #9b9b9b;
   margin-bottom: 48px;
+  font-weight: 400;
+  margin-right: 11px;
 }
 
-.item-box__autor span {
+.autor {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   color: #000000;
-  padding-left: 11px;
+  display: inline-block;
 }
 
 .item-box__description {
@@ -450,12 +452,17 @@ time {
   background-color: #f4f7f6;
   border: none;
   padding: 18px;
+  outline: none;
 }
 
 .mailing__input::placeholder {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.09em;
   color: #a2a4a3;
+}
+
+.mailing__input:focus {
+  border-bottom: 1px solid #c9ab52;
 }
 
 .mailing-btn {
@@ -492,13 +499,13 @@ time {
   border: 3px solid #eeeeee;
   text-transform: uppercase;
   font-size: 1.09em;
-  font-weight: 600;
+  font-weight: 700;
   color: #0f0d0e;
   display: inline-block;
 }
 
 .tags__link:hover {
-  font-weight: 700;
+  text-shadow: 0 0 #000000;
   color: #000000;
 }
 
@@ -516,6 +523,10 @@ time {
   font-size: 1.17em;
   font-weight: 700;
   color: #000000;
+}
+
+.theme__list-link:hover {
+  text-shadow: 0 0 #000000;
 }
 
 .theme__list-link span {
