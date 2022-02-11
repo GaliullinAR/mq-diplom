@@ -827,6 +827,11 @@ time {
   text-align: left;
   font-family: 'Open Sans', sans-serif;
   font-size: 13px;
+  outline: none;
+}
+
+.textarea:focus {
+  border-bottom: 1px solid #c9ab52;
 }
 
 .textarea::placeholder {
