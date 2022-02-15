@@ -199,6 +199,11 @@ time {
 .trends__title-link {
   font-size: 1.23em;
   text-transform: uppercase;
+  transition: all .3s;
+}
+
+.trends__title-link:hover {
+  color: #b59f5b;
 }
 
 .trends__list {
