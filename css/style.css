@@ -502,11 +502,13 @@ time {
   font-weight: 700;
   color: #0f0d0e;
   display: inline-block;
+  transition: all .3s;
 }
 
 .tags__link:hover {
   text-shadow: 0 0 #000000;
   color: #000000;
+  border: 3px solid #b59f5b;
 }
 
 .theme__list {
@@ -523,10 +525,11 @@ time {
   font-size: 1.17em;
   font-weight: 700;
   color: #000000;
+  transition: all .3s;
 }
 
 .theme__list-link:hover {
-  text-shadow: 0 0 #000000;
+  color: #b59f5b;
 }
 
 .theme__list-link span {
